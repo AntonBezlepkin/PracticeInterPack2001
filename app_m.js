@@ -11,32 +11,16 @@ router.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/main/index.html'));
 });
 
-router.get('/materials',function(req,res){
-  res.sendFile(path.join(__dirname+'/materials/index.html'));
-});
-
-router.get('/disciplines',function(req,res){
-  res.sendFile(path.join(__dirname+'/disciplines/index.html'));
-});
-
 router.get('/labels',function(req,res){
   res.sendFile(path.join(__dirname+'/labels/index.html'));
 });
 
-router.get('/video',function(req,res){
-  res.sendFile(path.join(__dirname+'/video/index.html'));
-});
- 
-router.get('/students',function(req,res){
-  res.sendFile(path.join(__dirname+'/students/index.html'));
+router.get('/dry_labels',function(req,res){
+  res.sendFile(path.join(__dirname+'/dry_labels/index.html'));
 });
 
-router.get('/abitur',function(req,res){
-  res.sendFile(path.join(__dirname+'/abitur/index.html'));
-});
-
-router.get('/science',function(req,res){
-  res.sendFile(path.join(__dirname+'/science/index.html'));
+router.get('/tags',function(req,res){
+  res.sendFile(path.join(__dirname+'/tags/index.html'));
 });
 
 router.get('/contacts',function(req,res){

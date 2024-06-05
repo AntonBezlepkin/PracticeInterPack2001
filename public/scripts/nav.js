@@ -15,17 +15,17 @@ function nav_main(hrf) {
   else {
    document.write('<a href="/labels" class="nav-scroller__item">Самоклеящиеся этикетки</a>');
  }
-  if(hrf=="disciplines") {
-    document.write(' <a href="#" class="nav-scroller__item   nav-scroller__item_active">Дисциплины</a>');
+  if(hrf=="dry_labels") {
+    document.write(' <a href="#" class="nav-scroller__item   nav-scroller__item_active">Сухие этикетки</a>');
    }
   else {
-   document.write(' <a href="/disciplines" class="nav-scroller__item">Дисциплины</a>');
+   document.write(' <a href="/dry_labels" class="nav-scroller__item">Сухие этикетки</a>');
   }
-  if(hrf=="materials") {
-     document.write('<a href="#" class="nav-scroller__item nav-scroller__item_active">Материалы</a>');
+  if(hrf=="tags") {
+     document.write('<a href="#" class="nav-scroller__item nav-scroller__item_active">Бирки</a>');
    }
    else {
-   document.write('<a href="/materials" class="nav-scroller__item">Материалы</a>');
+   document.write('<a href="/tags" class="nav-scroller__item">Бирки</a>');
   }
   if(hrf=="contacts") {
       document.write('<a href="#" class="nav-scroller__item nav-scroller__item_active">Контакты</a>');

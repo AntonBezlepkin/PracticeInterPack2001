@@ -7,6 +7,7 @@
     gap: 2vw;
 }
 
+
 .element {
     border-radius: 0%;
     border: solid #f60303 1vw;
@@ -15,12 +16,45 @@
     transition: background-color 0.15s;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(64, 52, 52); /* Устанавливаем цвет фона стрелок на черный */
+}
+
+/* Стили для активных стрелок переключения */
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+  color: rgb(64, 52, 52)ck; /* Устанавливаем цвет стрелок на черный */
+}
+
+.carousel {
+  width: 50%;
+  margin: auto; /* Центрируем изображение внутри слайда */
+  vertical-align: middle;
+}
+
+.carousel-item img {
+  width: 100%;
+  margin: auto; /* Центрируем изображение внутри слайда */
+  vertical-align: middle;
+}
+
  body {
   background-image: url('/images/2.jpg');
   background-attachment: fixed; /* фон остается неподвижным при прокрутке */
   background-size: cover;
   background-position: center;
   color: white; /* цвет текста на фоне изображения */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%; /* Чтобы изображение не выходило за пределы блока */
 }
 
 .element:hover {
@@ -46,8 +80,53 @@
 .list {
     list-style-type: disc;
     margin-left: 20px;
+    font-size: 1.5vw;
     margin: 0 150px;
     color: #36393d;
+}
+
+.contact-container_big{
+  display: flex; /* используем flexbox */
+  margin-inline: auto;
+  margin-bottom: 1vw;
+  white-space: nowrap;
+  width: auto;
+  justify-content: center; /* выравниваем элементы по горизонтали */
+  overflow: hidden; /* запрещаем перенос элементов на новую строку */
+  transform: scale(calc(var(--device-width) / 1920));
+}
+
+.contact-container_smal{
+  display: flex; /* используем flexbox */
+  align-items: center; /* выравниваем элементы по вертикали */
+  justify-content: center; /* выравниваем элементы по горизонтали */
+  padding:0 5vw;
+  margin: 1vw;
+  transform: scale(calc(var(--device-width) / 1920));
+  text-decoration: none;
+}
+
+.contact-container_smal img{
+  width: 2vw; /* установить ширину в 50% ширины экрана */
+  height: auto; /* автоматически подстроить высоту для сохранения пропорций */
+}
+
+ .partner-container::-webkit-scrollbar {
+   display: none; /* Убирает стандартные полосы прокрутки в Chrome и Safari */
+ }
+
+.create-line {
+  width: 75%;
+  border-top: 3px solid #000000;
+  margin-top: 1vw;
+}
+
+.text-contact{
+  font-weight: 500; 
+  font-size: 1.5vw; /* Размер текста */
+  padding: 1vw;
+  white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+  text-decoration: none;
 }
 
 .dop-info {
