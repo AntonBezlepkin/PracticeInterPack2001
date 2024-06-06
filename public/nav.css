@@ -94,7 +94,7 @@ ul {
     }
 
     .nav-scroller__item_active {
-      background-color: #fff59d;
+      background-color: #ffa49d;
     }
 
     .nav-scroller__item:not(.nav-scroller__item_active):hover {
@@ -102,6 +102,6 @@ ul {
     }
 
     .nav-scroller__item_active:hover {
-      background-color: #fff176;
+      background-color: #ffa49d;
     }
 
