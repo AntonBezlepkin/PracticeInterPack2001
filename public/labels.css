@@ -39,12 +39,30 @@
   vertical-align: middle;
 }
 
- body {
+.bg-dark {
+  background-color: #105469 !important;
+}
+
+.nav-item:hover {
+  color: #E2B842 !important;
+}
+
+h1 {
+  color: #105469;
+  font-weight: 700;
+}
+
+footer, footer .container .col{
+  height: 200px;
+}
+
+body {
   background-image: url('/images/2.jpg');
   background-attachment: fixed; /* фон остается неподвижным при прокрутке */
   background-size: cover;
   background-position: center;
   color: white; /* цвет текста на фоне изображения */
+  font-family: 'Raleway', sans-serif;
 }
 
 .center {
